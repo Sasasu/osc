@@ -111,6 +111,9 @@ setup(name='osc',
       packages = ['osc', 'osc.util'],
       scripts = ['osc-wrapper.py'],
       data_files = data_files,
+      install_requires=[
+          'm2crypto',
+      ],
 
       # Override certain command classes with our own ones
       cmdclass = {
